@@ -24,7 +24,8 @@ spec:
               type: RuntimeDefault
           containers:
             - name: sync
-              image: ghcr.io/bsquizz/ldap-sync:latest   # replace with your built image
+              image: quay.io/redhat-services-prod/hcm-eng-prod-tenant/hypershell-main/ldap-sync-main:latest
+              imagePullPolicy: Always
               args: ["--config", "/etc/sync/config.yaml"]
               envFrom:
                 - secretRef:

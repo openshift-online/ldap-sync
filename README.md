@@ -53,7 +53,7 @@ leaver. There is no ownership marker and no adopt step.
 
 ```bash
 pip install .
-# For auth.method: gssapi, first install the Kerberos build prerequisite, then the extra:
+# For auth.method: gssapi, first install the Kerberos build prerequisite:
 #   Fedora/RHEL:  sudo dnf install krb5-devel
 #   Debian/Ubuntu: sudo apt install libkrb5-dev
 pip install '.[gssapi]'

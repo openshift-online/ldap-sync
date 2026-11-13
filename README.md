@@ -5,10 +5,6 @@ directory (OpenLDAP, 389-ds /
 [Red Hat Directory Server](https://docs.redhat.com/en/documentation/red_hat_directory_server/13),
 Active Directory, ...) — via plain LDAP add/modify/delete.
 
-It's the LDAP→LDAP sibling of
-[`ldap-keycloak-sync`](https://github.com/bsquizz/ldap-keycloak-sync): same source side, but the
-destination is another directory instead of a Keycloak realm. Run it as a job wherever the
-source LDAP is reachable; it reads the source and **pushes** changes into the target directory.
 Designed to run as an OpenShift `CronJob`.
 
 The tool is generic LDAP→LDAP. The `disable` leaver action defaults to 389-ds/RHDS's

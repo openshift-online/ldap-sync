@@ -1,3 +1,4 @@
+# Rebuild trigger 2026-11-23: refresh image after sast-snyk-check erred on the 2026-11-21 build (EC test.no_erred_tests blocked the hypershell-main release).
 apiVersion: tekton.dev/v1
 kind: PipelineRun
 metadata:
